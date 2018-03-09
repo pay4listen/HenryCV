@@ -16,7 +16,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/perfect-scrollbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/md-pro.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <!--SCRIPT-->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
@@ -25,67 +24,78 @@
 </head>
 <body class="bootstrap-collapse">
 
-    <div class="loader">
-        <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
-        </svg>
-    </div>
+<div class="loader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+    </svg>
+</div>
 
-    <div class="wrapper wrapper-full-page invisible" id="toggle-content">
+<div class="wrapper wrapper-full-page invisible" id="toggle-content">
 
-        <!--NAVBAR-->
-        <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-target="#menu-example" data-toggle="collapse" type="button">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/#/dashboard">MD Pro Angular</a>
-                </div>
-                <div class="collapse navbar-collapse" id="menu-example">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="views/dashboard.html">
-                                <i class="fa  fa-sliders"></i> Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <a href="views/resume.html">
-                                <i class="fa  fa-newspaper-o"></i> Resume
-                            </a>
-                        </li>
-                        <li>
-                            <a href="views/portfolio.html">
-                                <i class="fa fa-television"></i> Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="views/about-me.html">
-                                <i class="fa fa-user-circle-o"></i> About me
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-primary navbar-transparent navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target="#menu-example" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/#/dashboard">MD Pro Angular</a>
             </div>
-        </nav>
+            <div class="collapse navbar-collapse" id="menu-example">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="views/dashboard.html">
+                            <i class="fa  fa-sliders"></i> Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="views/resume.html">
+                            <i class="fa  fa-newspaper-o"></i> Resume
+                        </a>
+                    </li>
+                    <li>
+                        <a href="views/portfolio.html">
+                            <i class="fa fa-television"></i> Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="views/about-me.html">
+                            <i class="fa fa-user-circle-o"></i> About me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <!--CONTENT-->
-        <div class="full-page login-page" filter-color="black">
-            <div class="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                            <div class="card"></div>
-                        </div>
+    <!--CONTENT-->
+    <div class="full-page login-page" filter-color="black">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+                        <div class="card"></div>
                     </div>
                 </div>
             </div>
-            <div class="full-page-background" style="background-image: url(assets/image/index-bg.jpeg) "></div>
         </div>
+        <div class="full-page-background" style="background-image: url(assets/image/index-bg.jpeg) "></div>
     </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        setTimeout(function () {
+          $('.loader').remove();
+          $('#toggle-content').removeClass('invisible');
+        }, 2000);
+
+    });
+</script>
 
 </body>
 </html>
