@@ -1,3 +1,156 @@
-.lock-page > .content, .login-page > .content {
-    padding-top: 9vh;
+.lock-page>.content, .login-page>.content {
+    padding-top: 25vh;
+}
+
+.wrapper.wrapper-full-page {
+    overflow: hidden;
+}
+
+.sidebar .sidebar-wrapper {
+    overflow: inherit;
+}
+
+.main-panel .main-content {
+    margin-top: 0px;
+}
+
+.navbar .navbar-nav>li>a {
+    font-size: 20px;
+}
+
+.navbar .navbar-nav>li>a .fa {
+    font-size: 25px;
+}
+
+.form-group label.control-label {
+    color: #2e2e2e;
+    font-size: 18px;
+}
+
+.progress {
+    height: 14px;
+}
+
+.progress .progress-bar {
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.job-title-1, .job-title-2 {
+    position:  absolute;
+    top: 23vh;
+    font-weight: 800;
+    color: white;
+    font-size: 6vw;
+}
+
+.job-title-1 {
+    left: 14vw;
+}
+
+.job-title-2 {
+    right: 14vw;
+}
+
+.job-title-3 {
+    position: relative;
+    top: -6vh;
+    font-weight: 600;
+    color: white;
+    display: none;
+}
+
+.stack-wrapper {
+}
+
+.stack-wrapper img {
+    max-height: 200px;
+    max-width: 200px;
+    position: absolute;
+    top: 70%;
+}
+
+img.basic-3 {
+    right: 83%;
+    top: 68%;
+}
+
+img.sass-icon {
+    right: 85%;
+    width: 127px;
+    top: 83%;
+}
+
+img.angular-icon {
+    right: 63%;
+}
+
+img.vue-icon {
+    top: 70%;
+    right: 61%;
+    width: 110px;
+}
+
+img.react-icon {
+    right: 69%;
+    top: 66%;
+}
+
+img.java-icon {
+    right: 50%;
+    width: 150px;
+}
+
+img.hibernate-icon {
+    right: 43%;
+    top: 78%;
+    width: 160px;
+}
+
+img.c-icon {
+    right: 31%;
+    width: 158px;
+}
+
+img.github-icon {
+    right: 0;
+}
+
+img.bitbucket-icon {
+    right: 12%;
+    height: 125px;
+    width: 125px;
+}
+
+img.jira-icon {
+    right: 19%;
+    top: 80%;
+}
+
+@media (max-width: 992px) {
+    .job-title-1, .job-title-2 {
+        display: none;
+    }
+    .job-title-3 {
+        display: block;
+    }
+}
+
+@keyframes expandWidth {
+    0% { width: 0; }
+    100% { width: auto; }
+}
+
+@-webkit-keyframes expandWidth {
+    0% { width: 0; }
+    100% { width: auto; }
+}
+
+.expandWidth {
+    -webkit-animation-name: expandWidth;
+    animation-name: expandWidth;
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    /*-webkit-transform-origin: left right;*/
+    /*transform-origin: center bottom;*/
 }

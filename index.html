@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/perfect-scrollbar.css">
     <link rel="stylesheet" type="text/css" href="assets/css/md-pro.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <!--SCRIPT-->
     <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
@@ -42,18 +43,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/#/dashboard">MD Pro Angular</a>
             </div>
             <div class="collapse navbar-collapse" id="menu-example">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="views/dashboard.html">
-                            <i class="fa  fa-sliders"></i> Dashboard
+                            <i class="fa fa-sliders"></i> Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="views/resume.html">
-                            <i class="fa  fa-newspaper-o"></i> Resume
+                            <i class="fa fa-newspaper-o"></i> Resume
                         </a>
                     </li>
                     <li>
@@ -77,8 +77,38 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                        <div class="card"></div>
+                        <div class="card card-profile" style="background-color: transparent; box-shadow: none; -webkit-box-shadow: none">
+                            <div class="card-avatar" style="max-height: 250px; max-width: 250px">
+                                <a href="">
+                                    <img src="assets/image/avatar.jpg">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <h2 class="job-title-1 animated">Software</h2>
+                <h2 class="job-title-2 animated">Engineer</h2>
+                <h2 class="job-title-3 text-center animated">Software Engineer</h2>
+            </div>
+            <div class="stack-wrapper">
+                <div class="stack-1">
+                    <img class="know-first basic-3 animated" src="assets/image/stack/js-html-css.png">
+                    <img class="know-after hide fadeInUp sass-icon animated" src="assets/image/stack/sass.png">
+                </div>
+                <div class="stack-2">
+                    <img class="know-first angular-icon animated" src="assets/image/stack/angular.png">
+                    <img class="know-after hide fadeInUp vue-icon animated" src="assets/image/stack/Vue.png">
+                    <img class="know-after hide fadeInUp react-icon animated" src="assets/image/stack/react.png">
+                </div>
+                <div class="stack-3">
+                    <img class="know-after hide fadeInUp java-icon animated" src="assets/image/stack/java.png">
+                    <img class="know-after hide fadeInUp hibernate-icon animated" src="assets/image/stack/hibernate.png">
+                </div>
+                <img class="know-first c-icon animated" src="assets/image/stack/c.png">
+                <div class="stack-4">
+                    <img class="know-first github-icon animated" src="assets/image/stack/github.png">
+                    <img class="know-after hide fadeInUp bitbucket-icon animated" src="assets/image/stack/bitbucket.png">
+                    <img class="know-after hide fadeInUp jira-icon animated" src="assets/image/stack/jira.png">
                 </div>
             </div>
         </div>
@@ -88,10 +118,22 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
+        var learnFirst = $('.stack-wrapper').find('.know-first');
+        var learnAfter = $('.stack-wrapper').find('.know-after');
         setTimeout(function () {
           $('.loader').remove();
           $('#toggle-content').removeClass('invisible');
+          $('.job-title-2').addClass('bounceInRight');
+          $('.job-title-1').addClass('bounceInLeft');
+          $('.job-title-3').addClass('bounceIn');
+          for (var i = 0; i < learnFirst.length; i++) {
+            learnFirst[i].classList.add('flipInX');
+          }
+        }, 1500);
+        setTimeout(function () {
+          for (var i = 0; i < learnAfter.length; i++) {
+            learnAfter[i].classList.remove('hide');
+          }
         }, 2000);
 
     });

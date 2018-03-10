@@ -22,8 +22,270 @@
     <script type="text/javascript" src="../assets/js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="../assets/js/perfect-scrollbar.min.js"></script>
     <script type="text/javascript" src="../assets/js/main.js"></script>
-</head>
-<body class="bootstrap-collapse">
 
+</head>
+<body class="bootstrap-collapse sidebar-mini">
+<div class="wrapper">
+
+    <!--SIDEBAR-->
+    <div class="sidebar" data-active-color="white" data-background-color="red" data-image="../assets/image/sidebar-1.jpg">
+        <div class="sidebar-wrapper">
+            <div class="user">
+                <div class="photo">
+                    <img src="../assets/image/avatar2.jpg">
+                </div>
+                <div class="info">
+                    <a class="collapsed" data-toggle="collapse" href="../index.html">
+                        <span>
+                            <b>Henry Hung</b>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-container">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fa fa-sliders"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resume.html">
+                            <i class="fa fa-newspaper-o"></i>
+                            <p>Resume</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <i class="fa fa-television"></i>
+                            <p>Portfolio</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-me.html">
+                            <i class="fa fa-user-circle-o"></i>
+                            <p>About Me</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-background" style="background-image: url(../assets/image/sidebar-1.jpg)"></div>
+    </div>
+
+    <!--CONTENT-->
+    <div class="main-panel" id="scroll-content">
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-text" data-background-color="rose">
+                                <h4 class="card-title">Basic</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="control-label">HTML</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 90%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">CSS</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 80%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">JavaScript</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 85%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header card-header-text" data-background-color="rose">
+                                <h4 class="card-title">C#</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="control-label">ASP.NET</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 80%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header card-header-text" data-background-color="rose">
+                                <h4 class="card-title">Design</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="control-label">Photoshop</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 30%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header card-header-text" data-background-color="rose">
+                                <h4 class="card-title">JS Framework/Library</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="control-label">Angular 2 (2+)</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 90%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">React</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 60%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Vue</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 75%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header card-header-text" data-background-color="rose">
+                                <h4 class="card-title">Java</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="form-group">
+                                    <label class="control-label">Web with Servlet</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 70%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Hibernate</label>
+                                    <div class="progress progress-line-info">
+                                        <div aria-valuemax="100"
+                                             class="progress-bar progress-bar-success"
+                                             role="progressbar" style="width: 70%;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FIXED PLUGIN-->
+<div class="fixed-plugin">
+    <div class="dropdown show-dropdown">
+        <a id="toggle-fixed-plugin" data-toggle="dropdown" href="#" aria-expanded="false">
+            <i class="fa fa-cog fa-2x"> </i>
+        </a>
+        <ul class="dropdown-menu">
+            <li class="header-title"> Sidebar Filters</li>
+            <li class="adjustments-line">
+                <a class="switch-trigger active-color" href="javascript:void(0)">
+                    <div class="badge-colors text-center">
+                        <span class="badge filter badge-purple" data-color="purple"></span>
+                        <span class="badge filter badge-blue" data-color="blue"></span>
+                        <span class="badge filter badge-green" data-color="green"></span>
+                        <span class="badge filter badge-orange" data-color="orange"></span>
+                        <span class="badge filter badge-red" data-color="red"></span>
+                        <span class="badge filter badge-white active" data-color="white"></span>
+                        <span class="badge filter badge-rose" data-color="rose"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Background</li>
+            <li class="adjustments-line">
+                <a class="switch-trigger background-color" href="javascript:void(0)">
+                    <div class="text-center">
+                        <span class="badge filter badge-white" data-color="white"></span>
+                        <span class="badge filter badge-black" data-color="black"></span>
+                        <span class="badge filter badge-red active" data-color="red"></span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="adjustments-line">
+                <a class="switch-trigger" href="javascript:void(0)">
+                    <p>Sidebar Mini</p>
+                    <div class="togglebutton switch-sidebar-mini">
+                        <label>
+                            <input checked="" type="checkbox"><span class="toggle"></span>
+                        </label>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <li class="header-title">Sidebar Images</li>
+            <li class="active">
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img alt="" src="../assets/image/sidebar-1.jpg">
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img alt="" src="../assets/image/sidebar-2.jpg">
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img alt="" src="../assets/image/sidebar-3.jpg">
+                </a>
+            </li>
+            <li>
+                <a class="img-holder switch-trigger" href="javascript:void(0)">
+                    <img alt="" src="../assets/image/sidebar-4.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
 </body>
 </html>
