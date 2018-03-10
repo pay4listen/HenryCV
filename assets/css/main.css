@@ -151,6 +151,35 @@ img.jira-icon {
     animation-name: expandWidth;
     -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    /*-webkit-transform-origin: left right;*/
-    /*transform-origin: center bottom;*/
+}
+
+.tooltipX {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipX .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipX:hover .tooltiptext {
+    visibility: visible;
+}
+
+.hobby-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobby-container i {
+    font-size: 50px;
 }
