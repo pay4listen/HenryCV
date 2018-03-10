@@ -131,26 +131,72 @@ img.jira-icon {
     .job-title-1, .job-title-2 {
         display: none;
     }
+
     .job-title-3 {
         display: block;
     }
-}
 
-@keyframes expandWidth {
-    0% { width: 0; }
-    100% { width: auto; }
-}
+    .stack-wrapper img {
+        max-height: 100px;
+        max-width: 100px;
+    }
 
-@-webkit-keyframes expandWidth {
-    0% { width: 0; }
-    100% { width: auto; }
-}
+    img.basic-3 {
+        right: 83%;
+        top: 68%;
+    }
 
-.expandWidth {
-    -webkit-animation-name: expandWidth;
-    animation-name: expandWidth;
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    img.sass-icon {
+        right: 85%;
+        width: 127px;
+        top: 83%;
+    }
+
+    img.angular-icon {
+        right: 63%;
+    }
+
+    img.vue-icon {
+        top: 70%;
+        right: 61%;
+        width: 110px;
+    }
+
+    img.react-icon {
+        right: 69%;
+        top: 66%;
+    }
+
+    img.java-icon {
+        right: 50%;
+        width: 150px;
+    }
+
+    img.hibernate-icon {
+        right: 43%;
+        top: 78%;
+        width: 160px;
+    }
+
+    img.c-icon {
+        right: 31%;
+        width: 158px;
+    }
+
+    img.github-icon {
+        right: 0;
+    }
+
+    img.bitbucket-icon {
+        right: 12%;
+        height: 125px;
+        width: 125px;
+    }
+
+    img.jira-icon {
+        right: 19%;
+        top: 80%;
+    }
 }
 
 .tooltipX {
