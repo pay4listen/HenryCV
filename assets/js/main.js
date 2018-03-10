@@ -44,6 +44,17 @@ $(document).ready(function () {
     !$(this)[0].checked ? body.removeClass('sidebar-mini') : body.addClass('sidebar-mini');
   });
 
+  $('#toggle-sidebar').click(function () {
+    var body = $('body');
+    if($(this).hasClass('toggled')) {
+      $(this).removeClass('toggled');
+      body.removeClass('nav-open');
+    } else {
+      $(this).addClass('toggled');
+      body.addClass('nav-open');
+    }
+  });
+
   const ps = new PerfectScrollbar('#scroll-content', {
     wheelSpeed: 2,
     suppressScrollX: true
